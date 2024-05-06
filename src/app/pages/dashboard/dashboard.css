@@ -1,0 +1,53 @@
+.email-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .email-page h1 {
+    text-align: center;
+  }
+  
+  .email-page div {
+    margin-bottom: 10px;
+  }
+  
+  .email-page label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .email-page input[type="text"],
+  .email-page textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .email-page textarea {
+    height: 150px;
+  }
+  
+  .email-page button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .email-page button:hover {
+    background-color: #0056b3;
+  }
+
+  .error {
+    color: red;
+  }
+  
