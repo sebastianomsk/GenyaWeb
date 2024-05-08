@@ -6,9 +6,9 @@ import { notificationsService } from '../../services';
 //     aws: 2
 // };
 const EmailPage = () => {
-    const [to, setTo] = useState('test@test.com');
-    const [subject, setSubject] = useState('test');
-    const [text, setText] = useState('hola');
+    const [to, setTo] = useState('');
+    const [subject, setSubject] = useState('');
+    const [text, setText] = useState('');
     const [toError, setToError] = useState('');
     const [subjectError, setSubjectError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -39,10 +39,7 @@ const EmailPage = () => {
             .then((response) => {
                 // eslint-disable-next-line no-console,
                 console.log('response: ', response);
-                // alert('Correo enviado!');
-
                 setEmailSent(true);
-                // TODO limpiar los states
             })
             .catch((error) => {
                 const data = error?.response?.data;
