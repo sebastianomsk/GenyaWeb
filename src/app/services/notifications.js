@@ -2,7 +2,7 @@ import Service from './abstract';
 
 class Notifications extends Service {
     constructor () {
-        super('24000');
+        super('notifications');
         // this.basePath = 'http://localhost:24000';
     }
 
