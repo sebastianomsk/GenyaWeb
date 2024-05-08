@@ -5,7 +5,7 @@ import _ from 'lodash';
 
 // const port = process.env.PORT || 24099;
 const env = process.env.REACT_APP_ENVIRONMENT || process.env.NODE_ENV;
-export const baseUrl = process.env.REACT_APP_BASE_URL || 'http://107.20.85.175';
+export const baseUrl = process.env.REACT_APP_BASE_URL || 'https://notifications-durokq4n3a-uc.a.run.app';
 
 // eslint-disable-next-line no-console
 console.log({
@@ -31,7 +31,7 @@ const mapKeys = {
 class Service {
     constructor (name, basePath, options = {}) {
         this.serviceName = name;
-        this.basePath = basePath || `:${name}`;
+        this.basePath = basePath || `https://${name}-durokq4n3a-uc.a.run.app`;
         this.baseUrl = baseUrl;
         this.r = axios.create(options);
 
